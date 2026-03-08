@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 19th Birthday</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2002/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💜</text></svg>">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="loader-heart">♥</div>
+            <p class="preloader-text">PREPARING YOUR STORY...</p>
+        </div>
+    </div>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <audio id="bg-music" loop>
+        <source src="audio/Solange - Cranes In The Sky Instrumental.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="audio-control" class="hidden-element">
+        <div class="audio-waves" id="audio-visualizer">
+            <span></span><span></span><span></span><span></span>
+        </div>
+    </div>
+
+    <section id="landing">
+        <audio id="voice-note" src="audio/Nile Bakery 2.m4a"></audio>
+        <div id="particles-container"></div>
+        <div class="landing-content" id="landing-content-box">
+            <h1 class="italic-serif">"Almost 4 years ago, I met my <span id="secret-word" class="hint-glow">best
+                    friend</span>."</h1>
+            <p class="subtitle breathing" id="landing-instruction">TAP THE GLOWING WORDS TO HEAR A SECRET...</p>
+            <div class="hold-container hidden-element" id="hold-wrapper">
+                <svg class="progress-ring" width="120" height="120">
+                    <circle class="progress-ring__circle" stroke="#d86c9b" stroke-width="4" fill="transparent" r="54"
+                        cx="60" cy="60" />
+                </svg>
+                <button id="hold-btn">HOLD</button>
+            </div>
+        </div>
+    </section>
+
+    <main id="main-content" class="hidden">
+        <section id="timeline">
+            <h2 class="section-title">Almost 4 Years With You</h2>
+            <p class="section-subtitle">Let me take you back...</p>
+            <div class="year-container">
+                <div class="year-block">
+                    <div class="year-header">
+                        <span class="year-num">1</span>
+                        <h3>Year 1 — <span class="highlight">The Beginning</span></h3>
+                    </div>
+                    <p class="body-text">It actually started on Racheal’s birthday. If you had told me then that you
+                        would become my best friend, I honestly wouldn’t have believed you. I didn’t even think you
+                        would invite me in the first place, I figured it was probably just because of Racheal. But even
+                        back then, I always thought you were cool. My mum even got to know you too. Prime Stober class
+                        days. Funny thing is, we didn’t even talk that much at the time. But somehow you were always
+                        there, someone I could come to and rant to about whatever was going on in my life. And then
+                        later, when you and Maishai started talking too, things somehow just kept unfolding from there.
+                    </p>
+                    <button class="toggle-memories">SEE MEMORIES</button>
+                    <div class="memories-grid">
+                        <div class="memory-card" style="background-image: url('image/11.jpg');"></div>
+                        <div class="memory-card" style="background-image: url('image/12.jpg');"></div>
+                        <div class="memory-card" style="background-image: url('image/13.jpg');"></div>
+                        <div class="memory-card" style="background-image: url('image/14.jpg');"></div>
+                        <div class="memory-card"><video src="image/15.MOV" autoplay loop muted playsinline></video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="year-block">
+                    <div class="year-header">
+                        <span class="year-num">2</span>
+                        <h3>Year 2 — <span class="highlight">The Growth</span></h3>
+                    </div>
+                    <p class="body-text">Ms Tosinnn. That woman was something. This was really the year our friendship
+                        took off. Things between us just became different. I was honestly surprised you stayed, even
+                        after you found out I cheated on Racheal. If you had decided to completely cut me off then, I
+                        honestly wouldn’t have blamed you. But you didn’t. And looking back, that year was… something
+                        else. Peak of my hormones 😭 But somehow, through all of that chaos, you still stayed. This was
+                        also when our prefectship started, always leaving class early like we had important government
+                        meetings. Then came the Joys era. Then the Maishai era. The Maishai era ended. The Joys era…
+                        ended a bit more dramatically. But through all of it, one thing stayed constant, we talked a
+                        lot. Like seriously, we started texting like crazy that year. And somewhere in the middle of all
+                        that, you even became my school mum. Omo… what a time that was</p>
+                    <button class="toggle-memories">SEE MEMORIES</button>
+                    <div class="memories-grid">
+                        <div class="memory-card" style="background-image: url('image/21.jpg');"></div>
+                        <div class="memory-card" style="background-image: url('image/22.jpg');"></div>
+                        <div class="memory-card" style="background-image: url('image/23.jpg');"></div>
+                        <div class="memory-card" style="background-image: url('image/24.jpg');"></div>
+                        <div class="memory-card" style="background-image: url('image/26.jpg');"></div>
+                        <div class="memory-card"><video src="image/111.MP4" autoplay loop muted playsinline></video>
+                        </div>
+                        <div class="memory-card"><video src="image/25.MOV" autoplay loop muted playsinline></video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="year-block">
+                    <div class="year-header">
+                        <span class="year-num">3</span>
+                        <h3>Year 3 — <span class="highlight">The Strength</span></h3>
+                    </div>
+                    <p class="body-text">This was the year our friendship really became solid. The year I could
+                        confidently beat my chest anywhere and say, “Yes, Michelle is my best friend.” Our back seat
+                        conversations alone could fill a whole book. I’ve honestly never felt as close to, or as
+                        genuinely at peace around anyone else the way I felt around you. I still remember one day when
+                        you told me, “I was about to place my head on your shoulder but then I realized you’re actually
+                        a guy.” That moment alone showed just how comfortable and natural our friendship had become.
+                        Then our prefect era was in full force. Leaving class early like VIPs and doing road safety
+                        work. And then there was that time I organized football and somehow got accused of being a pimp
+                        and organizing fornication. cough cough… Maishai. Guy, the way I would run away from Tofunmi
+                        just to come and stay with you 😭. And the funniest part was you helping me create excuses for
+                        leaving her and coming to meet you. Even when you and your girls were having your conversations,
+                        I was still there, just floating inside the gist like one honorary member. Then came the JAMB,
+                        WAEC, and NECO era. Thinking about it now, it’s crazy that we survived that period. There were
+                        moments we both felt like giving up, but somehow we always ended up motivating each other. You
+                        especially always found ways to prove yourself wrong and outperform your own expectations. It
+                        showed me something about you, whenever you truly put your mind to something, you always pull
+                        through. We even studied together sometimes. What an era. Then prom season came… and my hormones
+                        almost wanted to misbehave again. Thank God that phase has passed now 😭. Then there was Diane’s
+                        whole promposal, which you literally helped me prepare. In fact, you were basically the queen of
+                        promposal preparations. Then Zimuzo entered the picture too. Guy… what a time 🤣 Before we knew
+                        it, Prom came. Graduation came. One of the main reasons I was actually emotional on graduation
+                        day… was because of you. That was when we even came up with the best friend contract. All
+                        because deep down, we were both scared of losing this friendship.</p>
+                    <button class="toggle-memories">SEE MEMORIES</button>
+                    <div class="memories-grid">
+                        <div class="memory-card"><video src="image/31.MOV" autoplay loop muted playsinline></video>
+                        </div>
+                        <div class="memory-card" style="background-image: url('image/32.jpg');"></div>
+                        <div class="memory-card" style="background-image: url('image/33.jpg');"></div>
+                        <div class="memory-card" style="background-image: url('image/34.jpg');"></div>
+                        <div class="memory-card" style="background-image: url('image/35.jpg');"></div>
+                        <div class="memory-card"><video src="image/36.MOV" autoplay loop muted playsinline></video>
+                        </div>
+                        <div class="memory-card"><video src="image/37.MOV" autoplay loop muted playsinline></video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="year-block">
+                    <div class="year-header">
+                        <span class="year-num">4</span>
+                        <h3>Year 4 — <span class="highlight">Growing, But Still Us</span></h3>
+                    </div>
+                    <p class="body-text">Then university came along, and life started to become a bit more serious. Your
+                        preparations for school started too, learning German, attending classes, planning your future.
+                        We were both genuinely busy, and for a while we slowly drifted a little. But even during that
+                        time, I was always so proud of whatever you were doing. I remember how happy I was when you
+                        travelled. Seeing you experience new things and step into new opportunities genuinely made me
+                        proud. Then you came back and came to see us in Nile. I can’t even lie, I was genuinely joyful
+                        that day. Just seeing you doing your thing, growing as a person, actually finding a direction in
+                        life… it always made me happy. I’ve always been one of your biggest supporters, for real. And
+                        the funny thing is, even when we go a while without talking, once we start again it’s like
+                        nothing ever changed. We just click immediately. And honestly, I’m really glad we never grew
+                        apart. Because the truth is, I don’t think I can ever build a friendship like this with someone
+                        else again. The level of comfort, honesty, and understanding we have… it’s rare. For a long time
+                        after secondary school, I was scared that we might slowly drift away like most friendships do.
+                        But now? Seeing that we’ve actually survived this whole post–secondary school phase… that fear
+                        has finally calmed down. Because now I know something for sure: No matter where life takes us,
+                        we’ll always be there for each other.</p>
+                    <button class="toggle-memories">SEE MEMORIES</button>
+                    <div class="memories-grid">
+                        <div class="memory-card" style="background-image: url('image/41.jpg');"></div>
+                        <div class="memory-card" style="background-image: url('image/42.jpg');"></div>
+                        <div class="memory-card" style="background-image: url('image/43.jpg');"></div>
+                        <div class="memory-card" style="background-image: url('image/45.jpg');"></div>
+                        <div class="memory-card"><video src="image/44.MOV" autoplay loop muted playsinline></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reasons">
+            <h2 class="section-title">19 Reasons Why I Care</h2>
+            <p class="section-subtitle">Tap each card to reveal</p>
+            <div class="reasons-grid" id="reasons-container"></div>
+        </section>
+
+        <section id="outro">
+            <div class="letter-overlay" id="letter-overlay"></div>
+            <span class="close-letter" id="close-letter">&times;</span>
+            <div class="envelope-wrapper" id="envelope-wrapper">
+                <div class="envelope" id="envelope">
+                    <div class="flap top-flap"></div>
+                    <div class="flap side-flap"></div>
+                    <div class="letter" id="letter">
+                        <div class="letter-content" id="letter-content">
+                            <span id="typed-text"></span><span class="cursor">|</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="subtitle breathing mt-2">P.S. Tap to open</p>
+            </div>
+            <div id="hearts-container"></div>
+        </section>
+
+        <div id="media-modal">
+            <div class="modal-overlay"></div>
+            <span class="close-modal">&times;</span>
+            <div class="modal-content" id="modal-content"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
