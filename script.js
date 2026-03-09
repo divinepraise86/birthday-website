@@ -100,14 +100,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function startHold(e) {
     if (e.type === "touchstart") e.preventDefault();
+
+    // --- MOBILE AUDIO PRIMER HACK ---
+    // This instantly unlocks the audio context on her first physical touch
+    if (bgMusic && bgMusic.paused) {
+      // Set volume to 0 so she doesn't hear a weird blip
+      bgMusic.volume = 0;
+      bgMusic
+        .play()
+        .then(() => {
+          bgMusic.pause();
+        })
+        .catch((err) => console.log("Mobile primer caught:", err));
+    }
+    // --------------------------------
+
+    // Enforce the Easter Egg wait time
     if (isEasterEggPlaying) {
       landingInstruction.textContent = "Let the voice note finish first... 💜";
       landingInstruction.style.color = "var(--primary-pink)";
       holdBtn.textContent = "WAIT";
+
       if (navigator.vibrate) navigator.vibrate(100);
+
       return;
     }
+
     holdBtn.textContent = "HOLD";
+
     let elapsed = 0;
     progressInterval = setInterval(() => {
       elapsed += intervalStep;
